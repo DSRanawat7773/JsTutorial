@@ -13,3 +13,10 @@ accountCity = "Bhilwara"
 console.table([accountId, accountEmail, accountPass, accountCity])
 
 /* prefer not to use var due to the block scope and functional scope */
+
+/*--------OPERATIONS---------*/
+
+let value = 3;
+let negValue = -value;
+
+console.log(negValue)
