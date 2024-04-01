@@ -20,3 +20,14 @@ let value = 3;
 let negValue = -value;
 
 console.log(negValue)
+
+console.log(2+2)
+console.log(2*3)
+console.log(9/4)
+console.log(7**2)
+
+let str1 = "Jai";
+let str2 = " Mataji";
+
+console.log(str1*str2)
+console.log(str1+str2)
