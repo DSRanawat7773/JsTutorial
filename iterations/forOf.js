@@ -28,3 +28,20 @@ map.set('IN', 'India');
 for(const [key, value] of map) {
     console.log(key, ':-', value);
 }
+
+//loop for objects
+
+const myObj = {
+    js : 'javascript',
+    cpp : 'C++',
+    rb : 'Ruby',
+    swift : 'swift by apple'
+}
+
+
+/*FOR IN LOOP :> IT TAKES THE KEYS LIKE THEIR INDEX OF ARRAY
+WHILE FOR OF LOOP TAKES DIRECTLY THE VALUES INSIDE THE ARRAY*/
+    
+for(const key in myObj ) {
+    console.log(`Key is ${key} and their value is ${myObj[key]}`);
+}
