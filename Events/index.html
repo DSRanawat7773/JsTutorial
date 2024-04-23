@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <ul id="pets">
+
+    <li><img src="image.png" alt="" style="width: 300px; height: 300px;" id="Kutta"> </li>
+    <li><img src="product.png" alt="" style="width: 300px; height: 300px;" id="Gandak"> </li>
+    <li><img src="modelAthome.png" alt="" style="width: 300px; height: 300px;" id="Dog"> </li>
+    </ul>  
+</body>
+
+<script>
+    // const event = document.getElementById('Gandak').onclick = function(){
+    //     alert("This is Second Dog")
+    // }
+    document.getElementById('Gandak').addEventListener('click', function(e){
+        // let myDate = new Date(e.timeStamp);
+        // alert(myDate.getSeconds())
+        console.log("Clicked on inner side.")
+        e.stopPropagation;
+    }, false)
+
+    document.getElementById('pets').addEventListener('click', function(e){
+        console.log("Clicked on outer side.")
+        e.stopPropagation;
+    }, false)                                                                                //Third paramater i.e. TRUE or FALSE only use to define that which functions counters first
+
+
+    document.querySelector('#pets').addEventListener('click', function(e){
+        let removeIt = e.target.childNode.parentNode;
+        console.log(removeIt);
+        removeIt.remove();
+    }, false)
+
+
+
+    
+</script>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAI AUR CODE</title>
+</head>
+<style>
+    .heading{
+        padding: 20px;
+        background-color: gray;
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: xx-large;
+        text-shadow: 3px 3px 4px black;
+        top: 15px;
+    }
+    .sub-heading{
+        margin-top: 15px;
+        padding: 10px;
+        font-weight: 500;
+        font-size: x-large;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(193, 186, 186);
+        box-shadow: black 6px 6px 10px ;
+        color: white;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 70px;
+        
+            }
+    
+    button{
+        font-size: large;
+        padding: 6px;
+        font-weight: 600;
+        /* border-radius: 10px; */
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 70px;
+    }
+
+</style>
+<body class="body">
+    <div>
+        <div class="heading">
+            Background Colour Changer
+        </div>
+
+        <div class="sub-heading">
+            Click start to change the background colour.
+        </div>
+
+        <div class="btn">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+        </div>
+
+        <div class="container">
+            <h2>Intensity Changer</h2>
+            <input type="range" min="100" max="3000" value="300" id="intensityRange">
+            <p>Intensity: <span id="intensityValue">300</span></p>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+<!-- <script src="index.js"></script> -->
+
+</html>
