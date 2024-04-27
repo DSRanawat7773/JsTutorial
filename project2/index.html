@@ -45,8 +45,9 @@
 
     .container{
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
         margin-top: 70px;
+        width: 10%;
     }
 
 </style>
@@ -66,7 +67,7 @@
         </div>
 
         <div class="container">
-            <h2>Intensity Changer</h2>
+            <h2 style="">Intensity Changer</h2>
             <input type="range" min="100" max="3000" value="300" id="intensityRange">
             <p>Intensity: <span id="intensityValue">300</span></p>
         </div>
